@@ -1,0 +1,74 @@
+textarea {
+	background:url(longline.png)repeat-y;
+    width: 100%;
+    height: 50%;
+	line-height:25px;
+	padding:7px 110px;
+    background-color: #796D6D;
+    color: rgba(84, 60, 60, 0.89);
+    font-family: cursive;
+	/*border-color: black*/
+	wrap: "off";
+	/*border: 1px solid #ddd;*/
+}
+body{
+	margin:10px;
+	background-color: #615858;
+}
+div {
+    color: rgba(255, 255, 255, 0.89);
+    font-family: cursive;
+	/*text-align:left;
+	/*padding-top: 05px;
+    /*padding-right: 50%;*/
+    padding-bottom: 10px;
+    /*padding-left: 35%;*/
+    display: block;
+}
+::webkit-scrollbar{
+	width:10px;
+	height:10px;
+} 
+
+::webkit-scrollbar-track{
+	background-color:#b46868;
+}
+::webkit-scrollbar-button:start:decrement,::webkit-scrollbar-button:end:increment{
+	height: 10px;
+	background-color:transparent;
+}
+::webkit-scrollbar-thumb{
+	height:10px;
+	background-color:rgba(0,0,0,0.2);
+	border: 1px solid #eee;
+	-webkit-border-radius: 16px;
+}
+::webkit-scrollbar-corner{
+	background-color:black;
+}
+.header{
+	/*background-image:url(banner2.png);*/
+	width:100%;
+	height:auto;
+	padding:0;
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header_image{
+	height:auto;
+	width:100%
+}
+footer {
+	font-family:"Azedo-Bold";
+	src:url(Azedo-Light.ttf);
+	font-size:14px;
+    padding: 05px 0 4px 0;
+    text-align: center;
+}
+.row:after,.row:before{display:table;content:" "}
+.col-xs-12{
+	 float:left
+ }
+ .col-xs-12{width:100%}

@@ -1,0 +1,72 @@
+<html>
+<head>
+<script src="countabe.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="jquery.jscrollpane.css">
+		<div class="header">
+		</div>
+</head>
+<script>
+$(document).ready(function(){
+if(!$browser.webkit){$('.container').jScrollpane();}
+});
+</script>
+<body onload="test()">
+<div class="header">
+<img src="newban.png" class="header_image">
+		</div>
+		<hr>
+<center>
+<textarea align="center" id="a" onfocus="this.value='';setbg('#e5fff3');"></textarea>
+<br>
+<hr>
+
+<div id="demo">
+
+</div>
+</center>
+<!--input type='button' value='Count' onClick="test()"/-->
+<!--p id="demo"></p-->
+
+<script type="text/javascript">
+var a=document.getElementById('a')
+function callback(counter){
+
+	console.log(JSON.stringify(counter,null,5))
+	str=JSON.stringify(counter)
+	rts=str.slice(1,-1)
+	rts2=rts.replace(/"/g,'')
+	rts3=rts2.replace(/,/g,'<br>')
+	rts4=rts3.replace(/:/g,' >> ')
+
+	document.getElementById("demo").innerHTML=rts4
+	
+	
+//alert(str)
+}
+//Countable.live(a,callback)
+function test(a){
+	var a=document.getElementById('a')
+	return a.innerHTML=Countable.live(a,callback);
+}
+</script>
+<!--div class="footer">
+            <p align="center">Made with ♥ by <a href="#">PrathmeshPure</a></p>
+			<!--center>
+			<input type="button" class="form-control2" name="submit" value="About Us" id="myBtn"/><center-->
+</div-->
+<footer>
+<div class="row">
+<div class="col-xs-12">
+<p style='	font-family:"Azedo-Bold";
+	src:url(Azedo-Bold.ttf);
+'>Made with ♥ by <a href="#" target="_parent">Prathmesh Pure</a></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

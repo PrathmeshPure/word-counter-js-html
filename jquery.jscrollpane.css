@@ -1,0 +1,11 @@
+.jspTrack{
+background:#b46868;
+position:relative;
+}
+.jspDrag{
+	background:rgba(0,0,0,0.2);
+	cursor:pointer;
+	position:relative;
+	top:0;
+	left:0;
+}
